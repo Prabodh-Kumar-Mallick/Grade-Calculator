@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Grade Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,11 +25,11 @@
 <div class="content">
     <div class="right_side">
 
-        <input type="tel" id="c" placeholder="Subject 1 mark 0 to 100" >
-        <input type="tel" id="ja" placeholder="Subject 2 mark 0 to 100">
-        <input type="tel" id="ph" placeholder="Subject 3 mark 0 to 100">
-        <input type="tel" id="mt" placeholder="Subject 4 mark 0 to 100">
-        <input type="tel" id="csa" placeholder="Subject 5 mark 0 to 100">
+        <input type="tel" id="c" placeholder="Subject 1 mark 0 to 100" onkeypress="return/[0-9]/i.test(event.key)" maxlength="3">
+        <input type="tel" id="ja" placeholder="Subject 2 mark 0 to 100" onkeypress="return/[0-9]/i.test(event.key)" maxlength="3">
+        <input type="tel" id="ph" placeholder="Subject 3 mark 0 to 100" onkeypress="return/[0-9]/i.test(event.key)" maxlength="3">
+        <input type="tel" id="mt" placeholder="Subject 4 mark 0 to 100" onkeypress="return/[0-9]/i.test(event.key)" maxlength="3">
+        <input type="tel" id="csa" placeholder="Subject 5 mark 0 to 100" onkeypress="return/[0-9]/i.test(event.key)" maxlength="3">
  <button type="button" onclick="showResult()">Show Result</button>
     </div>
 </div>
